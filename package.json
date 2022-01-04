@@ -16,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/JakeFay/group-project-3/issues"
   },
-  "homepage": "https://github.com/JakeFay/group-project-3#readme"
+  "homepage": "https://github.com/JakeFay/group-project-3#readme",
+  "dependencies": {
+    "@mui/material": "^5.2.7",
+    "dotenv": "^10.0.0",
+    "mongodb": "^4.2.2",
+    "mongoose": "^6.1.4"
+  }
 }
