@@ -5,11 +5,10 @@ db.once('open', async () => {
   await Category.deleteMany();
 
   const categories = await Category.insertMany([
-    { name: 'text' },
-    { name: 'text' },
-    { name: 'text' },
-    { name: 'text' },
-    { name: 'text' }
+    { name: 'electronics' },
+    { name: 'books' },
+    { name: 'tools' },
+    { name: 'clothes' }
   ]);
 
   console.log('categories seeded');
@@ -18,22 +17,22 @@ db.once('open', async () => {
 
   const products = await Product.insertMany([
     {
-      name: 'text',
+      name: 'macbook',
       description:
-        'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
-      image: 'cookie-tin.jpg',
+        '16" Macbook Pro',
+      image: 'macbook-pro.jpg',
       category: categories[0]._id,
-      price: 2.99,
-      quantity: 500
+      price: 1999.99,
+      quantity: 5
     },
     {
-      name: 'text',
+      name: 'samsung galaxy',
       description:
-        'Praesent sed lacinia mauris. Nulla congue nibh magna, at feugiat nunc scelerisque quis. Donec iaculis rutrum vulputate. Suspendisse lectus sem, vulputate ac lectus sed, placerat consequat dui.',
-      image: 'canned-coffee.jpg',
+        'Samsung galaxy s21 ultra',
+      image: 'samsung-galaxy-s21-ultra.jpg',
       category: categories[0]._id,
-      price: 1.99,
-      quantity: 500
+      price: 1099.99,
+      quantity: 4
     },
     {
       name: 'text',
