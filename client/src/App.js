@@ -43,18 +43,18 @@ function App() {
     <ApolloProvider client={client}>
       <Router>
         <div>
-          <Provider store={store}>
+        <Provider store={store}>
             <Nav />
             <Routes>
-              <Route exact path="/" component={Home} />
-              <Route exact path="/login" component={Login} />
-              <Route exact path="/signup" component={Signup} />
-              <Route exact path="/success" component={Success} />
-              <Route exact path="/orderHistory" component={OrderHistory} />
-              <Route exact path="/products/:id" component={Detail} />
-              <Route component={NoMatch} />
+              <Route path="/" element={<Home />}></Route>
+              <Route path="/login" element={<Login />}></Route>
+              <Route path="/signup" element={<Signup />}></Route>
+              <Route path="/success" element={<Success />}></Route>
+              <Route path="/orderHistory" element={<OrderHistory />}></Route>
+              <Route path="/products/:id" element={<Detail />}></Route>
+              <Route element={<NoMatch />}></Route>
             </Routes>
-          </Provider>
+            </Provider>
         </div>
       </Router>
     </ApolloProvider>
@@ -62,4 +62,3 @@ function App() {
 }
 
 export default App;
-
