@@ -5,6 +5,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
+<<<<<<< HEAD
+    "seed": "node config/seeds.js",
+=======
+>>>>>>> c71ef0c2a85cdeec01d373648f421dc9e68dfe38
     "watch": "nodemon"
   },
   "keywords": [],
@@ -22,6 +26,7 @@
     "graphql": "^16.2.0",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.1.6",
+    "nodemon": "^2.0.15",
     "stripe": "^8.195.0"
   }
 }
