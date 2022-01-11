@@ -43,7 +43,7 @@ function App() {
     <ApolloProvider client={client}>
       <Router>
         <div>
-          <Provider store={store}>
+        <Provider store={store}>
             <Nav />
             <Routes>
               <Route path="/" element={<Home />}></Route>
@@ -54,7 +54,7 @@ function App() {
               <Route path="/products/:id" element={<Detail />}></Route>
               <Route element={<NoMatch />}></Route>
             </Routes>
-          </Provider>
+            </Provider>
         </div>
       </Router>
     </ApolloProvider>
@@ -62,4 +62,3 @@ function App() {
 }
 
 export default App;
-
