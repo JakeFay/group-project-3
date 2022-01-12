@@ -30,10 +30,11 @@ db.once('open', async () => {
       name: 'Green Eggs and Ham',
       description:
         'Praesent sed lacinia mauris. Nulla congue nibh magna, at feugiat nunc scelerisque quis. Donec iaculis rutrum vulputate. Suspendisse lectus sem, vulputate ac lectus sed, placerat consequat dui.',
-      image: 'gebook.jpeg',
+      image: 'gebook.jpg',
       category: categories[0]._id,
       price: 8.99,
       quantity: 500
+
     },
     {
       name: 'The Diary of Anne Frank',

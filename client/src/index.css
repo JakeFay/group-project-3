@@ -1,10 +1,10 @@
 :root {
-  --primary: rgb(71, 71, 71);
-  --secondary: rgb(197, 163, 13);
-  --tertiary: #B12704;
+  --primary: rgb(34, 41, 69);
+  --secondary: rgb(153, 176, 163);
+  --tertiary: rgb(68, 79, 73);
   --light: #fafafa;
   --dark: #272f32;
-  --error: rgb(228, 46, 1);
+  --error: rgb(211, 211, 211);
   --spacing-one: calc(1rem * 0.5);
   --spacing-two: calc(1rem);
 }
@@ -16,7 +16,7 @@
 html,
 body {
   min-height: 100%;
-  background-color: rgb(238, 248, 191) ;
+  background-color: rgb(228, 240, 247) ;
 }
 
 body {

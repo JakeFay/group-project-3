@@ -14,7 +14,6 @@ function Nav() {
             </Link>
           </li>
           <li className="mx-1">
-            {/* this is not using the Link component to logout or user and then refresh the application to the start */}
             <a href="/" onClick={() => Auth.logout()}>
               Logout
             </a>
@@ -43,8 +42,8 @@ function Nav() {
     <header className="flex-row px-1">
       <h1>
         <Link to="/">
-          <span role="img" aria-label="shopping bag"></span>
-          Book-Store
+          <span role="img" aria-label="books">📚</span>
+          Book Store
         </Link>
       </h1>
 
