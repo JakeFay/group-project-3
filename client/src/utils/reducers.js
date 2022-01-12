@@ -16,8 +16,8 @@ const store = {
   cart: [],
   cartOpen: false,
   categories: [],
-  currentCategory: ''
-}
+  currentCategory: '',
+};
 
 export const reducer = (state = store, action) => {
   switch (action.type) {
@@ -94,7 +94,7 @@ export const reducer = (state = store, action) => {
 };
 
 export function useProductReducer(initialState) {
-  return useReducer(reducer, initialState)
+  return useReducer(reducers, initialState)
 }
 
-export default reducer;
+export default reducers;
