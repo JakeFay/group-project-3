@@ -16,8 +16,8 @@ const store = {
   cart: [],
   cartOpen: false,
   categories: [],
-  currentCategory: ''
-}
+  currentCategory: '',
+};
 
 export const reducer = (state = store, action) => {
   switch (action.type) {
