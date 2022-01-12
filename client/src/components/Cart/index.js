@@ -1,4 +1,5 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
+import {Redirect} from 'react-router-dom';
 import { loadStripe } from '@stripe/stripe-js';
 import { useLazyQuery } from '@apollo/client';
 import { QUERY_CHECKOUT } from '../../utils/queries';
@@ -8,6 +9,7 @@ import Auth from '../../utils/auth';
 import { useDispatch, useSelector } from 'react-redux';
 import { TOGGLE_CART, ADD_MULTIPLE_TO_CART } from '../../utils/actions';
 import './style.css';
+import { set } from 'mongoose';
 
 const stripePromise = loadStripe('pk_test_TYooMQauvdEDq54NiTphI7jx');
 
@@ -15,6 +17,7 @@ const Cart = () => {
   const state = useSelector(state => state)
   const dispatch = useDispatch()
   const [getCheckout, { data }] = useLazyQuery(QUERY_CHECKOUT);
+  
 
   useEffect(() => {
     if (data) {
@@ -54,12 +57,18 @@ const Cart = () => {
       for (let i = 0; i < item.purchaseQuantity; i++) {
         productIds.push(item._id);
       }
+       
     });
+  //console.log(productIds)
 
     getCheckout({
       variables: { products: productIds },
     });
+    window.location.assign('/checkout')
+
   }
+
+  
 
   if (!state.cartOpen) {
     return (
