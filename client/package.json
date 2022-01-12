@@ -2,6 +2,7 @@
   "name": "materialui",
   "version": "0.1.0",
   "private": true,
+  "proxy": "http://localhost:3001/",
   "dependencies": {
     "@apollo/client": "^3.5.7",
     "@stripe/stripe-js": "^1.22.0",
@@ -16,6 +17,7 @@
     "react-router-dom": "^6.2.1",
     "react-scripts": "5.0.0",
     "redux": "^4.1.2",
+    "stripe": "^8.195.0",
     "web-vitals": "^2.1.2"
   },
   "scripts": {
