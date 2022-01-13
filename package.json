@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
     "seed": "cd server && npm run seed",
-    "start": "node server.js",
+    "start": "node server/server.js",
     "watch": "nodemon"
   },
   "repository": {
